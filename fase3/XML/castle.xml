@@ -1,0 +1,138 @@
+<scene>
+	<group>
+		<scale X="10" Y="2"/>
+
+		<group>
+			<rotate angle="90" axisX="0" axisY="1" axisZ="0"/>
+
+			<group>
+				<!--Parede direita-->
+				<translate X="5.5"/>
+				<models>
+					<model file="box.3d"/>
+				</models>
+			</group>
+
+			<group>
+				<!--Parede esquerda-->
+				<translate X="-5.5"/>
+				<models>
+					<model file="box.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Parede trás-->
+			<translate Z="-5.5"/>
+			<models>
+				<model file="box.3d"/>
+			</models>
+		</group>
+	</group>
+
+	<group>
+		<!--Parede frente-->
+        <translate Z="5.5"/>
+        <models>
+            <model file="box4.3d"/>
+        </models>
+    </group>
+
+	<group>
+		<scale Y="3"/>
+		<translate Y="0.5"/>
+
+		<group>
+			<!--Torre frente direita-->
+			<translate X="5.5" Z="5.5"/>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado frente direita-->
+				<translate Y="1.5"/>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Torre frente esquerda-->
+			<translate X="-5.5" Z="5.5"/>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado frente esquerda-->
+				<translate Y="1.5"/>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Torre trás direita-->
+			<translate X="5.5" Z="-5.5"/>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado trás direita-->
+				<translate Y="1.5"/>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Torre trás esquerda-->
+			<translate X="-5.5" Z="-5.5"/>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado trás esquerda-->
+				<translate Y="1.5"/>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+	</group>
+
+	<group>
+		<scale Y="2"/>
+
+		<group>
+			<!--Telhado centro direita-->
+			<translate X="2" Z="5.5" Y="1"/>
+			<models>
+				<model file="cone.3d"/>
+			</models>
+		</group>
+
+		<group>
+			<!--Telhado centro esquerda-->
+			<translate X="-2" Z="5.5" Y="1"/>
+			<models>
+				<model file="cone.3d"/>
+			</models>
+		</group>
+	</group>
+
+    <group>
+		<!--Lua-->
+        <translate Y="7" Z="-30" X="-2.5"/>
+        <models>
+            <model file="sphere.3d"/>
+        </models>
+    </group>
+</scene>

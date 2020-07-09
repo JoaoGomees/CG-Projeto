@@ -1,0 +1,1 @@
+Feito para compilar em Linux com make. Se for para compilar em OSX, ir ao make que esta em Engine/src e mudar as flags para LIBS= -framework GLUT -framework OpenGL -framework Cocoa

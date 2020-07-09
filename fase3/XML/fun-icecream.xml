@@ -1,0 +1,57 @@
+<scene>
+	<group>
+
+        <scale X="10" Y="10" Z="10"/>
+
+        <group>
+            <!--Cone interior-->
+            <scale Y="3"/>
+            <rotate angle="180" axisX="1"/>
+            <models>
+                <model file="cone.3d"/>
+            </models>
+            
+            <group>
+                <!--Cone exterior-->
+                <rotate time="3" axisY="-1"/>
+                <translate time="2">
+                    <point Y="0"/>
+                    <point Y="-6"/>
+                    <point Y="-12"/>
+                    <point Y="-6"/>
+                </translate>
+                <scale Y="1.1"/>
+                <models>
+                    <model file="cone.3d"/>
+                </models>
+            </group>
+        </group>
+
+        <group>
+            <!--Bola de gelado com rotação-->
+            <rotate time="3" axisY="1"/>
+            <translate Y="2"/>
+            <models>
+                <model file="sphere.3d"/>
+            </models>
+
+            <group>
+                <!--Bolacha-->
+                <translate time="3">
+                    <point Y="8" X="-9"/>
+                    <point Y="8" Z="9"/>
+                    <point Y="8" X="9"/>
+                    <point Y="8" Z="-9"/>
+                </translate>
+                <rotate angle="45" axisZ="-1"/>
+                <scale X="0.7" Y="0.7" Z="0"/>~
+                <models>
+                    <model file="cone.3d"/>
+                </models>
+            </group>
+        </group>
+
+    </group>
+    
+    
+</scene>

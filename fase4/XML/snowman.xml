@@ -1,0 +1,80 @@
+<scene>
+	<group>
+        <!--Primeira bola-->
+        <scale X="25" Y="20" Z="25"/>
+        <models>
+            <model file="sphere.3d"/>
+        </models>
+    </group>
+
+    <group>
+        <!--Segunda bola-->
+        <scale X="18" Y="15" Z="18"/>
+        <translate Y="25"/>
+        <models>
+            <model file="sphere.3d"/>
+        </models>
+    </group>
+
+    <group>
+        <!--Terceira bola-->
+        <scale X="12" Y="10" Z="12"/>
+        <translate Y="45"/>
+        <models>
+            <model file="sphere.3d"/>
+        </models>
+    </group>
+
+    <group>
+        <scale X="1.5" Y="1.5" Z="1"/>
+        <translate Y="49" Z="9"/>
+
+        <group>
+            <!--Olho esquerdo-->
+            <translate X="-5"/>
+            <models>
+                <model file="sphere.3d"/>
+            </models>
+        </group>
+
+        <group>
+            <!--Olho direito-->
+            <translate X="5"/>
+            <models>
+                <model file="sphere.3d"/>
+            </models>
+        </group>
+    </group>
+
+    <group>
+        <!--Nariz-->
+        <translate Y="45" Z="12"/>
+        <scale X="1.5" Z="1.5" Y="8"/>
+        <rotate angle="90" axisX="1" axisY="0" axisZ="0"/>
+        <models>
+            <model file="cone.3d"/>
+        </models>
+    </group>
+
+    <group>
+        <translate Y="53"/>
+
+        <group>
+            <!--Pala Chapéu-->
+            <scale X="25" Z="25"/>
+            <models>
+                <model file="plane.3d"/>
+            </models>
+        </group>
+
+        <group>
+            <!--Corpo do Chapéu-->
+            <translate Y="6.5"/>
+            <scale X="15" Y="13" Z="15"/>
+            <models>
+                <model file="box.3d"/>
+            </models>
+        </group>
+    </group>
+
+</scene>

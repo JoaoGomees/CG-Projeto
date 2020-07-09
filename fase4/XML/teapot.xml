@@ -1,0 +1,14 @@
+
+<scene>
+	<lights>
+		<light type="DIRECTIONAL" dirX="1" />
+		<light type="POINT" posX="1" />
+		<light type="DIRECTIONAL" dirX="1" at="2"/>
+		<light type="SPOT" dirX="1" at="2" cut="40" posY="3"/>
+    </lights>
+	<group>
+		<models>
+			<model file="teapot.3d" texture="bla" diffR="0" emisG="2"/>
+		</models>
+	</group>		
+</scene>

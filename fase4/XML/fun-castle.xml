@@ -1,0 +1,201 @@
+<scene>
+	<group>
+		<scale X="10" Y="2"/>
+
+		<group>
+			<rotate angle="90" axisX="0" axisY="1" axisZ="0"/>
+
+			<group>
+				<!--Parede direita-->
+				<translate X="5.5"/>
+				<models>
+					<model file="box.3d"/>
+				</models>
+			</group>
+
+			<group>
+				<!--Parede esquerda-->
+				<translate X="-5.5"/>
+				<models>
+					<model file="box.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Parede trás-->
+			<translate Z="-5.5"/>
+			<models>
+				<model file="box.3d"/>
+			</models>
+		</group>
+	</group>
+
+	<group>
+		<!--Parede frente-->
+        <translate Z="5.5"/>
+        <models>
+            <model file="box4.3d"/>
+        </models>
+    </group>
+
+	<group>
+		<scale Y="3"/>
+		<translate Y="0.5"/>
+
+		<group>
+			<!--Torre frente direita-->
+			<rotate time="1" axisY="1"/>
+			<translate time="4">
+				<point X="5.5" Z="5.5"/>
+				<point X="5.5" Z="-5.5"/>
+				<point X="-5.5" Z="-5.5"/>
+				<point X="-5.5" Z="5.5"/>
+            </translate>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado frente direita-->
+				<translate time="1">
+					<point Y="1.5"/>
+					<point Y="2"/>
+					<point Y="3"/>
+					<point Y="2"/>
+				</translate>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Torre frente esquerda-->
+			<rotate time="1" axisY="1"/>
+			<translate time="4">
+				<point X="5.5" Z="-5.5"/>
+				<point X="-5.5" Z="-5.5"/>
+				<point X="-5.5" Z="5.5"/>
+				<point X="5.5" Z="5.5"/>
+            </translate>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado frente esquerda-->
+				<translate time="1">
+					<point Y="1.5"/>
+					<point Y="2"/>
+					<point Y="3"/>
+					<point Y="2"/>
+				</translate>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Torre trás direita-->
+			<rotate time="1" axisY="1"/>
+			<translate time="4">
+				<point X="-5.5" Z="-5.5"/>
+				<point X="-5.5" Z="5.5"/>
+				<point X="5.5" Z="5.5"/>
+				<point X="5.5" Z="-5.5"/>
+            </translate>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado trás direita-->
+				<translate time="1">
+					<point Y="1.5"/>
+					<point Y="2"/>
+					<point Y="3"/>
+					<point Y="2"/>
+				</translate>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+
+		<group>
+			<!--Torre trás esquerda-->
+			<rotate time="1" axisY="1"/>
+			<translate time="4">
+				<point X="-5.5" Z="5.5"/>
+				<point X="5.5" Z="5.5"/>
+				<point X="5.5" Z="-5.5"/>
+				<point X="-5.5" Z="-5.5"/>
+            </translate>
+			<models>
+				<model file="box.3d"/>
+			</models>
+
+			<group>
+				<!--Telhado trás esquerda-->
+				<translate time="1">
+					<point Y="1.5"/>
+					<point Y="2"/>
+					<point Y="3"/>
+					<point Y="2"/>
+				</translate>
+				<models>
+					<model file="cone.3d"/>
+				</models>
+			</group>
+		</group>
+	</group>
+
+	<group>
+		<scale Y="2"/>
+
+		<group>
+			<!--Telhado centro direita-->
+			<rotate time="1" axisY="1"/>
+			<translate time="2">
+				<point X="2" Y="1" Z="5.5"/>
+				<point X="0" Y="2" Z="5.5"/>
+				<point X="-2" Y="1" Z="5.5"/>
+				<point X="0" Y="2" Z="5.5"/>
+            </translate>
+			<models>
+				<model file="cone.3d"/>
+			</models>
+		</group>
+
+		<group>
+			<!--Telhado centro esquerda-->
+			<rotate time="1" axisY="1"/>
+			<translate time="2">
+				<point X="-2" Y="1" Z="5.5"/>
+				<point X="0" Y="2" Z="5.5"/>
+				<point X="2" Y="1" Z="5.5"/>
+				<point X="0" Y="2" Z="5.5"/>
+            </translate>
+			<models>
+				<model file="cone.3d"/>
+			</models>
+		</group>
+	</group>
+
+    <group>
+		<!--Lua-->
+		<rotate time="1" axisY="1"/>
+		<translate time="2">
+				<point Y="7" Z="-30" X="-2.5"/>
+				<point Y="7" Z="-20" X="-5"/>
+				<point Y="7" Z="-10" X="-2.5"/>
+				<point Y="7" Z="-20" X="0"/>
+            </translate>
+        <translate Y="7" Z="-30" X="-2.5"/>
+        <models>
+            <model file="sphere.3d"/>
+        </models>
+    </group>
+</scene>
